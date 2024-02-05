@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_search_day52/data/repository/pixabay_photo_repository.dart';
 import 'package:image_search_day52/presentation/main/main_state.dart';
 
 class MainViewModel with ChangeNotifier {
@@ -21,5 +22,8 @@ class MainViewModel with ChangeNotifier {
 }
 
 class GetTopFiveMostViewdImagesUseCase {
+  GetTopFiveMostViewdImagesUseCase(
+      PixabayPhotoRepositoryImpl pixabayPhotoRepositoryImpl);
+
   execute(String query) {}
 }
